@@ -19,7 +19,7 @@ public class Main {
         //square of number using MAP
         List<Integer>square = number.stream().map(x->x*x).collect(Collectors.toList());
 
-        List<String> numberString = Arrays.asList("aa","za","sc","ba");
+        List<String> numberString = Arrays.asList("aa","za","sc","ccc");
 
 
         //find string starts with 2 using FILTER
