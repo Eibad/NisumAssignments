@@ -10,6 +10,8 @@ public class Test {
         String a = "qwerty";
         String b = "qwerty"; //a = b = "qwerty";
 
+        b=b.concat("ss");
+        b="qwerty";
         System.out.println(a==b);  //pointing towards same object
         System.out.println(a.equals(b)); //having same value
 

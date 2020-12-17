@@ -1,10 +1,12 @@
+package Z_Extra;
+
 import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Main {
+public class MainStream {
 
     public static void main(String[] args) {
 

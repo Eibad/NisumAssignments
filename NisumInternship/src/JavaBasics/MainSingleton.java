@@ -19,6 +19,7 @@ public class MainSingleton {
         zz.setValue("Singleton Update only one object");
         System.out.println(z);
         System.out.println(zz);
+        System.out.println(z==zz);
 
 
     }
