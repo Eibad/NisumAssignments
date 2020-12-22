@@ -15,16 +15,22 @@ public class Singleton {
     }
 
     public static  Singleton createInstance(){
+
+
         if(singletonInstance == null){
+            synchronized (Singleton.class){
             singletonInstance = new Singleton();
+        }
+//            singletonInstance = new Singleton();
         }
         return singletonInstance;
     }
 
     public static Singleton createInstance(String value){
         if(singletonInstance == null){
+            synchronized (Singleton.class){
              singletonInstance = new Singleton(value);
-        }
+        }}
         return singletonInstance;
     }
 

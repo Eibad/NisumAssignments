@@ -12,10 +12,7 @@ public class Test {
         System.out.println(rectangle.calculateArea(20,12));
     }
 }
-
-
-
-//check by mwthod signature
+//check by method signature
 //bind on compile time
 //acheive by method overloading
 //static or eraly binding

@@ -5,22 +5,23 @@ public class MainSingleton {
     public static void main(String[] args) {
 
         Singleton singleton = Singleton.createInstance();
-//        Singleton singleton1 = Singleton.createInstance();
-//
-//        System.out.println(singleton);
-//        System.out.println(singleton1);
+        Singleton singleton1 = Singleton.createInstance();
 
-        Singleton z =Singleton.createInstance("Singleton Initialize");
-        System.out.println(z);
+        Singleton singletonInitialize =Singleton.createInstance("Singleton Initialize");
+        System.out.println(singletonInitialize);
 
-        Singleton zz = Singleton.createInstance();
-        System.out.println(zz);
+        System.out.println("HashCode of singleton "+singleton.hashCode());
+        Singleton singleton2 = Singleton.createInstance();
+        System.out.println(singleton2);
 
-        zz.setValue("Singleton Update only one object");
-        System.out.println(z);
-        System.out.println(zz);
-        System.out.println(z==zz);
+        singleton2.setValue("Singleton Update only one object");
+        System.out.println(singleton);
+        System.out.println(singleton1);
+        System.out.println("singleton==singleton1 : "+(singleton==singleton1));
 
+        System.out.println("HashCode of singleton  "+singleton.hashCode());
+        System.out.println("HashCode of singleton1 "+singleton1.hashCode());
 
     }
 }
+//only one object for all

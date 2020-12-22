@@ -7,19 +7,21 @@ public class Test {
 //    Literal =  same object
 //        find if object found refer to this
 
-        String a = "qwerty";
-        String b = "qwerty"; //a = b = "qwerty";
+        String qwertyLiteral = "qwerty";
+        String qwertyLiteral1 = "qwerty"; //a = b = "qwerty";
 
-        b=b.concat("ss");
-        b="qwerty";
-        System.out.println(a==b);  //pointing towards same object
-        System.out.println(a.equals(b)); //having same value
+        qwertyLiteral1=qwertyLiteral1.concat("ss");
+        qwertyLiteral1="qwerty";
+        System.out.println("qwertyLiteral==qwertyLiteral1 : "+(qwertyLiteral==qwertyLiteral1));  //pointing towards same object
+        System.out.println("qwertyLiteral.equals(qwertyLiteral1) : "+(qwertyLiteral.equals(qwertyLiteral1))); //having same value
 
-        String stringa = new String("qwerty"); //object 1
-        String stringb = new String("qwerty"); //object 2
+        System.out.println("-- BY NEW --");
 
-        System.out.println(stringa == stringb); //both reference are change
-        System.out.println(stringa.equals(stringb)); //compare on equal
+        String qwerty = new String("qwerty"); //object 1
+        String qwerty_ = new String("qwerty"); //object 2
+
+        System.out.println("stringa == qwerty    :  " +(qwerty == qwerty_)); //both reference are change
+        System.out.println("qwerty.equals(qwerty_)   : "+(qwerty.equals(qwerty_))); //compare on equal
 
     }
 

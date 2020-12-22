@@ -35,6 +35,5 @@ public class Main  {
     }
 }
 
-
 //    Write a Java program to create a custom exception class that
 //    deals with NULL Strings (your custom exception should be thrown if String is NULL)
