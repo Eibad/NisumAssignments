@@ -2,11 +2,22 @@ package INTERMEDIATE.JDBC;
 
 public class Student {
 
+    private int id;
     private String rollNumber;
     private String name;
     private String classStd;
 
+    public Student() {
+    }
+
     public Student(String rollNumber, String name, String classStd) {
+        this.rollNumber = rollNumber;
+        this.name = name;
+        this.classStd = classStd;
+    }
+
+    public Student(int id, String rollNumber, String name, String classStd) {
+        this.id = id;
         this.rollNumber = rollNumber;
         this.name = name;
         this.classStd = classStd;
@@ -34,5 +45,23 @@ public class Student {
 
     public void setClassStd(String classStd) {
         this.classStd = classStd;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", rollNumber='" + rollNumber + '\'' +
+                ", name='" + name + '\'' +
+                ", classStd='" + classStd + '\'' +
+                '}';
     }
 }
