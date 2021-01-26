@@ -1,0 +1,29 @@
+JSP = Jakarta server pages
+
+use Java programming language
+extension of servlet
+sperate business and presentation logic
+No need to recompile
+less code then servlet
+
+directive <%@page import="java.util" %>
+	forlibararies import
+
+java expression <% =some java expression %>
+	calling function
+	mathematical expression
+	for printing
+
+jsp scriplet <% some java code: 1 to many line %>
+	loops
+	for for logics
+
+
+jsp declaration <%! variable or method declaration %>
+	declarring methods
+	for declaring initilizining
+
+
+
+
+

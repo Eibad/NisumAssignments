@@ -1,0 +1,43 @@
+Spring is framework dont construct object we will do it for you 
+
+*Dependency Injection : laptop[ram,harddrive...] all are from different
+object depend on another object means every thing is not depend 
+
+Loose Coupling : one obj not depent on other object [harddrive company can change]
+
+but we are here using new call Tight Coupling
+
+*Depedency inj container ; responisble to create object to you then inject in your class
+
+in xml we define if some want harddrive give him this harddrive
+
+@componet : genrated when requiered
+
+now how laptop say that he want harddisk
+@Autowire : mention that i want harddrive 
+
+HardDrive obj = new HitachiDrive();
+equals
+@Autowired
+HardDrive obj
+
+spring framwork connect autowired with component coonection is autuwired
+
+why :   we want loose coupling
+	help in testing we test class without effect other thing
+
+
+
+MAVEN : build tool, jar file , you just tell maven required file
+	pom.xml = where you mention maven about requierd files
+
+unique for the world
+GroupId = define project [com.nisum]
+ArtifaceId = represnt project name [demo]
+ 
+
+
+
+
+
+

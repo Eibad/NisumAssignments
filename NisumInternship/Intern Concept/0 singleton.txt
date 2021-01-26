@@ -1,0 +1,8 @@
+
+mehreen_9241 17620singleton: only one instance(object) of a class
+used by rescource is sahred by all application
+
+method:
+Lasy intializing = private constructor, static instance
+Lazy intializing with dobule lock = 
+Lazy Load = 

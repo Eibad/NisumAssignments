@@ -1,0 +1,13 @@
+
+
+Comparable =  implemnt in class, use for define natural sorting,compareTo()
+
+Comparator = we make sperate for this
+	compare on the basis of boject attributes
+	compare()
+
+
+
+
+
+

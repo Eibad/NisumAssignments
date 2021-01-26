@@ -1,0 +1,75 @@
+Spring MVC : 
+
+Controller (Dispacther Servlet)
+all request goto front controller
+dispacther thing i want to call login controller as the request is of Login
+
+client->request to->web xml file-> dispacher [need config file where define]
+
+
+every controller have mapping by @controller
+controller return a page/view ; data genrated by controller
+
+every thing is done by dispatcher
+
+why? ; in future you just chng config file just
+
+
+multiple controller under single controller
+
+
+JSTL : jakarta standard tag library ; tag library for designing in html
+import by using <%@ taglib 
+
+@modelAttribute = bind model populated with data from form
+@requestMApping = map web request to spring controller methods
+@requestMApping(value ="") = 
+Model = object,supply attrbiute use for rendering views
+JdbcTemplate = class,main API through which we access most functionaltity like create
+DAO = data access object,sql queries , sperate data rescoure from data acess
+Bean = public reusable, encapsule many object in one object
+web.xml = config file , define mapping between urls and servlet
+@pathvariable = 
+
+template working from bean ?
+
+
+href="<path of request mapping>"
+
+
+
+** SPRING CONFIG ** 
+web-inf -> web.xml
+configuration of dispatcher sevlet:
+define disapcther servlet class -> dispatch request by himself
+map with "/" ->forward all request to dispacher
+
+spring config:
+web-inf ->spring-servlet.xml
+
+schemas declare
+beans tag has schemas
+
+from where our component scan ->it scall all class
+view resolver -> view of all application (.jsp)
+data source -> database config
+
+
+localsession factory -> for hibernate  -> anootated class define all entity
+
+hibernate template -> give reference of factory = use for perfrom operation with database
+
+
+hibernateTranstion manger -> to autmotaticaly manage transaction = we need trastion for wtrite opeartion
+
+
+
+** MAKE DAO **
+class which contact with database
+@Component = spring mangange life cycle of object
+@autowired hiberante = spring mvc bring object of hibernate from spring config
+
+
+
+
+

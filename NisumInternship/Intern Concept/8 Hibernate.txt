@@ -1,0 +1,31 @@
+ORM(technology) : object relation mapping, object/class related with database 
+Hirbernate(tool) :layer between class,database store object direct in database with save()
+
+how->session object to use save() ->{using SessionFactory} ->it has all db config 
+
+JDBC vs Hirbanate
+
+@id
+@Transient -> i dont want to create column
+@entity ->which class is going to be stored in database
+@table(name="")
+@Column(name = "")
+@embeddable ->didnot create atble
+
+one to one
+many to many(mapped by="")
+
+persistance->entity ->classes which object are to be store in database
+annotations
+
+onCreate
+onUpdate
+
+fetch EAGER / LAZY : only required sql run  no joing sql run until required
+
+Hirbanate CACHE
+
+Adavantage
+.ORM
+
+ANOTATION : for decoration, help compiler 

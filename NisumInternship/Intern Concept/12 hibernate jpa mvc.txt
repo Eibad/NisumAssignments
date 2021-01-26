@@ -1,0 +1,7 @@
+ORM(technology) :object relation mapping, object/class related with database 
+Hirbernate(tool) :layer between class,database store object direct in database with save()
+Spring(framework) :dont construct object we will do it for you 
+Spring MVC :Controller (Dispacther Servlet)
+all request goto front controller ,dispacther thing i want to call login controller as the request is of Login
+
+JDBC vs Hirbanate

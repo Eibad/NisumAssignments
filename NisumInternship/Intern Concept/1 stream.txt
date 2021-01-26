@@ -1,0 +1,13 @@
+Stream : to filter,collect,print from data structure(collections)
+
+MAP: return stream after applying function, work on whole list
+
+FILTER : for selected on condtion
+
+sorted: sort stream
+
+stream vs parallel stream? where tou use ? pros cons?
+
+souc=rcde tree install for github
+
+chery coomit		

@@ -1,0 +1,20 @@
+Error = it terminate the whole program
+Exception = we handle error so it doesnot terminate whole program
+
+Check  =  on compile time , I/Oexception, SQL exceptiom
+Uncheck=  on run time , Airthmetic,index out of bound
+Error  =  cant correct , outOfMemory, VM error
+
+Thorwable -> Error -> [stackOVerFlow, outOF memory....]
+	  ->Exception->IO exception
+			->SQL exception
+			->class not found
+			->Run time exception ->[airthmetic,nullpointer,index]
+
+
+try = where exception can occured
+catch = after exception what shoud be done
+finally = must execute (for closing coonection..) 
+throw = for throwing exception
+throws = declare, exception may occur in this method 					
+

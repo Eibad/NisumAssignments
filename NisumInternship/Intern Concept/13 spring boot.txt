@@ -1,0 +1,27 @@
+developer -> spring boot ->spring
+
+Spring boot : give you dpedency and config ; production ready application
+cocept of single ton  
+
+starter project
+auto configuration (application.properties)
+
+Dependency Injection: we dont create object maually,
+
+SCOPE of spring bean
+1-Singleton scope   : [by default] [by default spring uses singleton pattern]
+2-prototype scope :@Scope(value="prototype")  : [didnt create object on run, it will create object when getbean()]
+
+@component : to create instance of object
+
+@Autowired : seacrh for objet in object container for connecting by type
+@Autowired + @Qualifier("name") : search for object in container by name but have to mention name at @comnent("namee")
+
+START :
+intialize from spring boot.io
+add dependecies in pom -> jparsa for jsp, jstl 
+
+
+ 
+
+

@@ -1,0 +1,20 @@
+== check references points to same location 
+equalto() check values of object, it is overriden
+hashCode integer value associated with each object
+
+same/equal objects have same hash code
+
+if hashCode are equal then it doesnt mean objects are also equal
+but if objects are equal then hash must also same 
+
+we want to override either both of them or neither of them
+beacuse if we override equals() and doesnot over hashCode() then the
+hash of both object are not same and here we are breaking rules vice versa
+
+
+reflexive: a == a -> true
+symmetric: a==b && b==a -> true
+transitive: a==b && b==c -> a==c
+consistent: equal should work with consistent mean every time return true until vaule are not chnge
+
+hash(Object... values) : can take n numbers of object

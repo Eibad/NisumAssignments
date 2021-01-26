@@ -1,0 +1,14 @@
+new Project -> maven -> archeType [maven-archetype-webapp]
+set tomcat server : editConfig -> tomcat->local ->Application Server = <version>
+Add dependencies : from mvn repo
+
+SRPING CONFIG
+
+
+
+
+
+
+
+
+

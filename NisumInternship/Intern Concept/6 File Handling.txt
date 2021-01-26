@@ -1,0 +1,6 @@
+FileFilter() -> work on file attrbiutes/properties like hidden
+
+FileNameFilter() ->work on file name eg. endsWith(".txt")
+
+
+

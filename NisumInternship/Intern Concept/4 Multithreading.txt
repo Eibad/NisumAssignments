@@ -1,0 +1,7 @@
+Multithreading : one task doest not wait for other , all run parallel
+Thread : execution engine,subpart smallestpart of process, independent
+Process : it have multiple threads, over all work in application is single process
+
+ccps
+
+
