@@ -22,47 +22,19 @@ public class StudentController {
     @Autowired
     StudentService studentService;
 
-    @Autowired
-    StudentRepository studentRepository;
-
-    @GetMapping("/hello")
-    public String helo(){
-        return "hello world";
-    }
 
     @PostMapping("/student")
     private ResponseEntity<Student> save(@RequestBody StudentDTO studentDTO){
 
-        return new ResponseEntity<Student>(studentService.saveStudent(studentDTO), HttpStatus.OK);
+        return new ResponseEntity<Student>(studentService.saveStudent(studentDTO), HttpStatus.CREATED);
     }
 
-    @PostMapping("/studentss")
-    private Student saveStudent(@RequestBody Student student){
-
-        return (studentRepository.save(student));
-    }
 
     @GetMapping("/student")
     private List<Student> getAllStudents(){
         return studentService.getAllStudent();
     }
 
-    @GetMapping("/students")
-    public List<Student> g(){
-        return studentRepository.findAll();
-    }
-
-    @CrossOrigin
-    @GetMapping(value="/ticketId/{ticketId}",produces= MediaType.APPLICATION_JSON_VALUE)
-    public Student getTicketById(@PathVariable("ticketId")Long ticketId){
-        return studentService.getStudentById(ticketId);
-    }
-
-    @GetMapping("/getEmployees")
-    public List<Student> getAllEmployees() {
-        List<Student> employees = studentRepository.findAll();
-        return employees;
-    }
 
     @GetMapping("/student/{id}")
     private ResponseEntity<Student> getStudentById(@PathVariable("id") Long studentId){

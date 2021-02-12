@@ -4,28 +4,21 @@ import com.example.schoolmanagement.dto.StudentDTO;
 import com.example.schoolmanagement.model.Student;
 import com.example.schoolmanagement.repository.StudentRepository;
 import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.Mockito.*;
 
 
 @RunWith(MockitoJUnitRunner.class)
-//@SpringBootTest   //it run whole application
 public class StudentServiceTest {
 
     @InjectMocks
@@ -37,6 +30,11 @@ public class StudentServiceTest {
 
 //    @MockBean
 //    Student student;
+
+    @AfterEach
+    public void clean(){
+        System.out.println("clean method");
+    }
 
     @Test
     public void getAllStudent(){
@@ -65,6 +63,7 @@ public class StudentServiceTest {
         when(studentRepository.save(any(Student.class))).thenReturn(student);
        Student student1 =  studentService.saveStudent(studentDTO);
        assertNotNull(student1);
+
 //       assertEquals();
 //        assertThat(studentService.saveStudent(new StudentDTO(student.getName(),student.getClassStd()))).isEqualTo(student);
     }

@@ -25,9 +25,9 @@ public class StudentService {
             student.setClassStd(studentDTO.getClassStd());
             return studentRepository.save(student);
         }catch (DataIntegrityViolationException ex){
-            throw new DaoException("Could Not PErform Save Operation");
-
-        }catch (Exception ex){
+//            throw new DaoException("Could Not PErform Save Operation");
+//
+//        }catch (Exception ex){
             throw new RuntimeException(ex);
         }
 //        HibernateException

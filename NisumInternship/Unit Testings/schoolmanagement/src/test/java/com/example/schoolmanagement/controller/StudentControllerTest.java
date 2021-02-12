@@ -1,215 +1,114 @@
 package com.example.schoolmanagement.controller;
 
-
 import com.example.schoolmanagement.dto.StudentDTO;
 import com.example.schoolmanagement.model.Student;
-import com.example.schoolmanagement.repository.StudentRepository;
 import com.example.schoolmanagement.service.StudentService;
-
-import static org.mockito.ArgumentMatchers.*;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
-import javafx.beans.binding.When;
-import org.apache.catalina.connector.Response;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
 import org.mockito.junit.MockitoJUnitRunner;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.mock.web.MockHttpServletResponse;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
-import org.springframework.test.web.servlet.RequestBuilder;
-import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import org.springframework.web.context.WebApplicationContext;
 
-import static org.hamcrest.CoreMatchers.is;
-
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
-import static org.mockito.BDDMockito.given;
-
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.mockito.Mockito.when;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyLong;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-
-//@RunWith(SpringRunner.class)
-////@SpringBootTest
-//@WebMvcTest(StudentController.class)
-
+//@RunWith(SpringJUnit4ClassRunner.class)
 @RunWith(MockitoJUnitRunner.class)
+//@SpringBootTest
 public class StudentControllerTest {
+//    @Autowired
 
-    @Autowired
+//    @Mock
+//    StudentController studentController;
+
+
     MockMvc mockMvc;
 
-    @MockBean
-    private StudentService studentService;
+    @InjectMocks
+    StudentController studentController;
+    @Mock
+    StudentService studentService;
+
+
+//    @Mock
+//    StudentRepository studentRepository;
+
+    @Before
+   public void setUp(){
+        mockMvc = MockMvcBuilders.standaloneSetup(studentController).build();
+    }
 
     @Test
     public void test() throws Exception {
-        Student mockTicket = new Student(1L,"n","e");
-
-
-        Mockito.when(studentService.getStudentById(anyLong())).thenReturn(mockTicket);
-
-        String URI = "/api/ticketId/1";
-        RequestBuilder requestBuilder = MockMvcRequestBuilders.get(
-                URI).accept(
-                MediaType.APPLICATION_JSON);
-
-        MvcResult result = mockMvc.perform(requestBuilder).andReturn();
-        String expectedJson = this.mapToJson(mockTicket);
-        String outputInJson = result.getResponse().getContentAsString();
-        assertThat(outputInJson).isEqualTo(expectedJson);
+       mockMvc.perform(get("/api/hello")).andExpect(status().isOk()).andExpect(content().string("hello world"));
     }
-    private String mapToJson(Object object) throws JsonProcessingException {
+
+    @Test
+    public void getAllStudents() throws Exception {
+        Student student= new Student(1L,"1","1");
+        Student student1= new Student(2L,"1","1");
+        List<Student> studentList = Arrays.asList(student,student1);
+
+        Mockito.when(studentService.getAllStudent()).thenReturn(studentList);
+
+        MvcResult result = mockMvc.perform(get("/api/student")).andExpect(status().isOk()).andReturn();
+
         ObjectMapper objectMapper = new ObjectMapper();
-        return objectMapper.writeValueAsString(object);
+        String  productlist = result.getResponse().getContentAsString();
+        Student[] students = objectMapper.readValue(productlist,Student[].class);
+
+        assertEquals(studentList.size(),students.length);
     }
 
+    @Test
+    public void getStudent() throws Exception {
+        Student student = new Student(1L,"Eibad","II");
 
-//    private MockMvc mockMvc;
-//    @Autowired
-//    private WebApplicationContext context;
-//    ObjectMapper om = new ObjectMapper();
-//
-//    @Before
-//    public void setUp() {
-//        mockMvc = MockMvcBuilders.webAppContextSetup(context).build();
-//    }
-//    @Autowired
-//    MockMvc mockMvc;
+        Mockito.when(studentService.getStudentById(anyLong())).thenReturn(student);
 
-//    @MockBean
-//    StudentService studentService;
+        MvcResult result = mockMvc.perform(get("/api/student/1")).andExpect(status().isOk()).andReturn();
 
-//    @MockBean
-//    StudentRepository studentRepository;
-//
-//    @Autowired
-//    ObjectMapper objectMapper;
+        ObjectMapper objectMapper = new ObjectMapper();
+        Student outputStudent = objectMapper.readValue(result.getResponse().getContentAsString(),Student.class);
 
-//    @Test
-//    public void test() throws Exception {
-//        Student student= new Student(1L,"1","1");
-//        Student student1= new Student(2L,"1","1");
-////        List<Student> studentList = Arrays.asList(student,student1);
-//        List<Student> studentList = new ArrayList<>();
-//        studentList.add(student);
-//        studentList.add(student1);
-//        MvcResult result = mockMvc
-//                .perform(get("/api/getEmployees").content(MediaType.APPLICATION_JSON_VALUE))
-//                .andExpect(status().isOk()).andReturn();
-//        result.getResponse();
-//        String resultContent = result.getResponse().getContentAsString();
-//        Response response = om.readValue(resultContent, Response.class);
-//        Assert.assertTrue(response.isStatus() == Boolean.TRUE);
-//        Mockito.when(studentRepository.findAll()).thenReturn(studentList);
+//        assertEquals(student.toString(),result.getResponse().getContentAsString());
+        assertEquals(student.toString(),outputStudent.toString());
+    }
 
-//        String url ="/students";
-//        mockMvc.perform(get(url)).andExpect(status().isOk());
+    @Test
+    public void saveStudent() throws Exception {
+        Student student = new Student("Eibad","II");
+        StudentDTO studentDTO = new StudentDTO(student.getId(),student.getName(),student.getClassStd());
+        Mockito.when(studentService.saveStudent(any(StudentDTO.class))).thenReturn(student);
 
-//        Mockito.doNothing().when(studentService.getAllStudent());
-//        mockMvc.perform(get("/student")).andReturn();
-//        mockMvc.equals(new Student());
-//    }
+        ObjectMapper objectMapper = new ObjectMapper();
+        String json = objectMapper.writeValueAsString(studentDTO);
+        MockHttpServletResponse  response = mockMvc.perform(post("/api/student/").content(json).contentType(MediaType.APPLICATION_JSON)).andReturn().getResponse();
 
-//    @Mock
-//    StudentService studentService;
-
-//    @Mock
-//    StudentRepository studentRepository;
+//        MockHttpServletResponse response = result.getResponse();
+        assertEquals(HttpStatus.CREATED.value(),response.getStatus());
 
 
-//    @Test
-//    public void testController() throws Exception {
-//        Student student= new Student("1","1");
-//        Student student1= new Student("1","1");
-//
-////        StudentDTO student2= new StudentDTO("1","1");
-//        List<Student> studentList = Arrays.asList(student,student1);
-////        List<StudentDTO> studentList1 = Arrays.asList(student2,student2);
-//
-//
-//        when(studentService.getAllStudent()).thenReturn(studentList);
-//
-//        String url = "/student";
-//        mockMvc.perform(get(url)).andExpect(status().isOk());
-//
-//
-//    }
-//
-//    @InjectMocks
-//    private StudentController helloWorldController;
-//
-//    private MockMvc mockMvc;
-//
-//    @Before
-//    public void setup() {
-//        MockitoAnnotations.initMocks(this);
-//        this.mockMvc = MockMvcBuilders.standaloneSetup(helloWorldController).build();
-//    }
-//
-//    @Test
-//    public void testCreateSignupFormInvalidUser() throws Exception {
-//        this.mockMvc.perform(get("/api/student")).andExpect(status().isOk());
-//    }
+    }
 
-//    @Autowired
-//    MockMvc mockMvc;
-//
-//    @InjectMocks
-//    StudentService studentService;
-//
-//    @Mock
-//    StudentRepository studentRepository;
-//
-//    @Test
-//    public void shouldFetchAllUsers() throws Exception {
-//        Student student= new Student("1","1");
-//        Student student1= new Student("1","1");
-//        Student student2= new Student("1","1");
-//        List<Student> studentList = Arrays.asList(student,student1,student2);
-//        given(studentService.getAllStudent()).willReturn(studentList);
-//
-//        mockMvc.perform(get("/api/student"))
-//                .andExpect(status().isOk())
-//                .andExpect(jsonPath("$.size()", is(studentList.size())));
-//    }
-//
-//
-//    @Test
-//    public void getStudent() throws Exception {
-//        Student student= new Student("1","1");
-//        Student student1= new Student("1","1");
-//        Student student2= new Student("1","1");
-//        List<Student> studentList = Arrays.asList(student,student1,student2);
-//
-//        when(studentService.getAllStudent()).thenReturn(studentList);
-//        when(studentRepository.findAll()).thenReturn(studentList);
-//
-//        String url = "/api/students";
-//        MvcResult mvcResult = mockMvc.perform(get(url)).andExpect(status().isOk()).andReturn();
-////        MvcResult mvcResult = mockMvc.perform(get("/api")).andExpect(redirectedUrl("/students")).andExpect(status().isFound()).andReturn();
-//
-//        System.out.println(mvcResult);
-//
-//    }
 
 }

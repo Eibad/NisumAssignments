@@ -9,14 +9,12 @@ public class StudentDTO {
     public StudentDTO() {
     }
 
-    public StudentDTO( String name, String classStd) {
-        this.name = name;
-        this.classStd = classStd;
-    }
-
     public StudentDTO(long id, String name, String classStd) {
         this.id = id;
         this.name = name;
+        this.classStd = classStd;
+    }
+    public StudentDTO( String classStd) {
         this.classStd = classStd;
     }
 
