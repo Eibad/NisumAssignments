@@ -1,0 +1,15 @@
+	student fee collection app. 
+//login
+//have nav bar
+ add student, view all student
+
+add student--
+	Form
+	name phone,father,date of join
+
+view student--
+	List of all student show Jtable
+	Check box (yes/no) for fees
+	Also can submit fees option
+
+Email will triger who will not pay fees till 15 jan

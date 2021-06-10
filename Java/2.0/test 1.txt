@@ -1,0 +1,8 @@
+Monday Test (11-09-2020)
+
+what is java, jdk, jvm
+java classes vs object
+toString() , equal()
+constructor() overloading
+java method, java variable, premtive type, wrapper classes,
+class variable , object variable 

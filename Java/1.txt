@@ -1,0 +1,15 @@
+class is blue print, it is Concept which does not exist physcaily but virtualy
+on this cocept u classify whic category of object
+
+Object is of instance of class
+
+primtica data type alreay
+
+
+int vs Integer
+int premitive type
+Integer wrapper class has methods
+
+stack : has referecne , pointing towards object
+heap : has object
+garbage : run on its moods

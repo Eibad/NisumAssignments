@@ -1,0 +1,38 @@
+
+  //------13-1-2020 array of obj-------
+  arry_obj=[
+
+    {name:"Eibad" , age:13},
+    {name:"Ali" , age:12},
+    {name:"Ahmed" , age:22},
+    {name:"Amir" , age:17},
+    {name:"Abc" , age:66}
+  ]
+
+
+  arry2_obj =[]
+  //------------------
+
+
+//13-1-2020
+
+    this.arry2_obj = this.arry_obj.filter(function(v,i){
+
+      if(v.age < 20){
+        return true;
+      }
+
+
+    })
+
+    this.arry2_obj = this.arry_obj.map(function(v,i){
+
+        if(v.age < 20){
+          return v;
+        }
+        else {return v.name="skip"}
+  
+  
+      })
+
+  //  console.log(this.arry2_obj)

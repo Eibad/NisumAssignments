@@ -1,0 +1,63 @@
+public class Student {
+
+    private String name;
+    private int age;
+    private int roll;
+
+    public Student() {
+    }
+
+    public Student(String name, int age, int roll) {
+        this.name = name;
+        this.age = age;
+        this.roll = roll;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getRoll() {
+        return roll;
+    }
+
+    public void setRoll(int roll) {
+        this.roll = roll;
+    }
+
+    
+}
+
+
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+
+        ArrayList<Student> stdList = new ArrayList<Student>();
+
+        Student s1 = new Student("eibad",22,01);
+        Student s2 = new Student("ali",22,02);
+        Student s3 = new Student("rahim",22,03);
+
+
+        stdList.add(s1);
+        stdList.add(s2);
+        stdList.add(s3);
+
+ 	 	
+}}

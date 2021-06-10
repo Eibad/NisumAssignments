@@ -1,0 +1,21 @@
+
+//---------task-----
+customer=[
+
+  {name:"Eibad" , age:13 ,phone:"021333"},
+  {name:"Ali" , age:12,   phone:"021333"},
+  {name:"Ahmed" , age:22, phone:"021333"},
+  
+]
+
+
+
+  let findName = this.customer.find(function(v,i){
+
+      if(v.name="Eibad"){
+
+        return true;
+      }
+    })
+
+    console.log(findName)

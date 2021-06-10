@@ -1,0 +1,26 @@
+Design Pattern:
+
+Dependency injdection 
+what : object1 depend on other object2 -> inject depdency/ external object ; @component genrated on requierement object1
+@autowired object1 in class of object1 
+
+why : 
+
+tight coupling
+loose coupling
+
+@mock without effting database
+
+Maven : built tool - for handling 3rd party libararies , geting jar file
+pom.xml is maven file
+project : every thing 
+group is : name of company 
+artifcat id : project name
+
+Spring frame work:
+
+Spring Boot: production ready application
+
+application.properties
+
+

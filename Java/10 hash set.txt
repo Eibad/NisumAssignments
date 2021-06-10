@@ -1,0 +1,13 @@
+set : has not duplicate value
+
+dont have insertion order
+seraching is fast
+
+
+//login page 
+//check data from database and open another layout
+//due wednesday
+
+//coonect to mysql database javatpoint
+mysql jar 
+install -> jbdc 

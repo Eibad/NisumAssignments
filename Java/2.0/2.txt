@@ -1,0 +1,12 @@
+Car car1 = new Car();
+
+STACK : refrences
+car1
+
+HEAP : objects
+car1.name ="honda"
+
+CLASS AREA: static wali cheezain
+
+String Contant Pool: have  string varibale
+

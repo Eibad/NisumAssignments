@@ -1,0 +1,11 @@
+equal check content
+==
+
+string pool 
+string= new  ->heap,pool 
+
+string
+how -> final,
+
+contstrucchaing => parent cont
+ 

@@ -1,0 +1,5 @@
+three class student-list of course, course-list of instructor instrutor
+instructor can multiple course
+
+instructor who teach math course
+then its student 

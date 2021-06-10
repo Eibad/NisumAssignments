@@ -1,0 +1,27 @@
+<!-- <h1>{{global}}</h1>
+<h1>{{array1[0] + array1[0] + "  s"}}</h1>
+
+<h1>{{obj1.age}} </h1>
+
+<button (click)="add()" type="button" class="btn">+</button>
+<button (click)="sub()"type="button" class="btn">-</button>
+
+<h1>{{value}}</h1> -->
+<!-- <input type="text"/> -->
+
+<h1>Calculator</h1>
+<input type="text" [(ngModel)]="first"/>
+<input type="text" [(ngModel)]="second"/>
+
+
+
+<button (click)="add()"type="button" class="btn">Add</button>
+<button (click)="sub()"type="button" class="btn">sub</button>
+<button (click)="mul()"type="button" class="btn">mul</button>
+<button (click)="divide()"type="button" class="btn">divide</button>
+
+<h1>{{result}}</h1>
+
+<h2>Hide login button</h2>
+
+<h1 *ngIf = "true">show if answer is true</h1>

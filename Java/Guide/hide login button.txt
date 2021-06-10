@@ -1,0 +1,5 @@
+//hide any thing 
+//eg: login button for login people
+<h2>Hide login button</h2>
+
+<h1 *ngIf = "true">show if answer is true   </h1>

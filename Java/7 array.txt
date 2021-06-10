@@ -1,0 +1,4 @@
+array when you have similart data type of element
+array is random access
+
+int 4 btye space

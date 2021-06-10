@@ -1,0 +1,36 @@
+construtor =run one time at first
+
+ngonit =run one time after constructor
+
+change =run when change occure during parent child
+
+mode=run when changes occcur on same class
+
+*ngIf -->for hiding html tags
+
+*ngfor  -->for print tag multiple time
+
+(ngSubmit)  -->send data of form singaly
+
+ [data]="arry_obj"  -->use in tag to send data with in child parent
+
+{{var}}  -->bind var ,print in html
+
+map  -->for loop return object
+
+find --> return object
+
+
+filter --> for searching
+
+splice -->for delete 
+//delete index 2 end after 1 itteration
+//arryString.splice(2,1)
+
+//delete from index 2 end after 1 itteration place "change" on index 2 
+arryString.splice(2,1,"change","woe");
+
+
+
+
+

@@ -1,0 +1,29 @@
+Q1.Explain JDK, JRE and JVM?
+Q2.Explain public static void main(String args[]) in Java
+Q3.Why Java is platform independent?
+Q4.Why Java is not 100% Object-oriented?
+Q5.What is JIT compiler?
+Q6.What is classloader?
+Q7.Is Empty .java file name a valid source file name?
+Q8.What are wrapper classes in Java?
+Q9.What are constructors in Java?
+Q10.What is the difference between equals() and == in Java?
+Q11.What's the purpose of Static methods and static variables?
+Q12.What's the purpose of overriding toString method?
+Q13.Why Strings in Java are called as Immutable?
+Q14.What are the differences between Heap and Stack Memory in Java?
+Q15.How many types of constructors are used in Java?
+Q16.What is the purpose of a default constructor?
+Q17.Does constructor return any value?
+Q18.Is constructor inherited?
+Q19.Can you make a constructor final?
+Q20.Can we overload the constructors?
+Q21.What are the differences between the constructors and methods?
+Q22.What are the restrictions that are applied to the Java static methods?
+Q23.Why is the main method static?
+Q24.Can we override the static methods?
+Q25.What is the static block?
+Q26.Can we execute a program without main() method?
+Q27.What is the difference between static (class) method and instance method?
+Q28.Can we make constructors static?
+Q29.Can we make the abstract methods static in Java?

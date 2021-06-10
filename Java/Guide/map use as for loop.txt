@@ -1,0 +1,31 @@
+//---------------Map (for loop)------
+//return object in array of object
+//return string array of string
+
+ /* console.log("---------MAP----------")
+  let array_Obj=[
+
+    {name:"Eibad" , pswd:123},
+    {name:"Ali" , pswd:123}
+  ]
+
+  array_Obj.map(function(value,indeex){
+
+    console.log(value);
+    console.log(value.name);
+  })
+  
+
+  let copyArray=[]
+  copyArray = array_Obj.map(function(value,indeex){
+
+    return value;
+  })
+
+  console.log("Copy Array")
+  copyArray.map(function(value,indeex){
+
+    console.log(value);
+    
+  })
+  */

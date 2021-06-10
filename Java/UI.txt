@@ -1,0 +1,13 @@
+odd
+Swing modieifes form odd
+fx for comercialize devlopment
+acuator for auto run
+
+
+----Tasks----
+Login page have button bg-imge 2taskfield
+
+java string methods
+
+make method of : contains ,index of, substring,trim using charater array
+factory desing pattern

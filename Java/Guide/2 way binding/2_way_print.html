@@ -1,0 +1,12 @@
+<h1>Calculator</h1>
+<input type="text" [(ngModel)]="first"/>
+<input type="text" [(ngModel)]="second"/>
+
+
+
+<button (click)="add()"type="button" class="btn">Add</button>
+<button (click)="sub()"type="button" class="btn">sub</button>
+<button (click)="mul()"type="button" class="btn">mul</button>
+<button (click)="divide()"type="button" class="btn">divide</button>
+
+<h1>{{result}}</h1>

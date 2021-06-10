@@ -1,0 +1,6 @@
+single action in different ways
+
+run time/dynamic
+
+acheice by extend,inteface
+

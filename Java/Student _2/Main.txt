@@ -1,0 +1,121 @@
+import java.util.*;
+
+public class Collections {
+
+    public static void main(String[] args) {
+
+        HashSet<Student> studentSet = new HashSet<>();
+
+
+        List<Student> stdList = new ArrayList<Student>();
+
+        Course it = new Course("IT", 200.0,20.0);
+        Course mathe = new Course("MATH", 200.0,150.0);
+        Course matha = new Course("MATH", 200.0,120.0);
+
+        Course mathr = new Course("MATH", 200.0,200.0);
+
+
+
+        Student s1 = new Student("eibad", 22.0, Arrays.asList(it,mathe));
+        Student s4 = new Student("eibad", 22.0, Arrays.asList(it,mathe));
+
+        Student s2 = new Student("ali",22.0, Arrays.asList(it,matha));
+        Student s3 = new Student("rahim",22.0, Arrays.asList(mathr));
+
+
+        stdList.add(s1);
+        stdList.add(s2);
+        stdList.add(s3);
+
+
+        studentSet.add(s1);
+        studentSet.add(s4);
+        Iterator<Student> i=studentSet.iterator();
+        System.out.println("--------------------");
+
+        System.out.println(stdList);
+        System.out.println(studentSet);
+        System.out.println("--------------------");
+
+
+        //array list link list
+
+//        System.out.println(stdList);
+//        List<Student> sC = new ArrayList<Student>();
+//        sC = (List) stdList.clone();
+
+//        System.out.println(sC);
+
+        //stdList.clear();  //clear list
+
+        //stdList.lastIndexOf(s2) //reutrn index of s2 last apeard
+
+        //stdList.remove(1);  //reomve object from index
+
+
+        ArrayList<String> lst = new ArrayList<String>();
+
+        ArrayList<String> lstCopy = new ArrayList<String>();
+        lst.ensureCapacity(0310);
+lst.add("eibad");
+lst.add("ali");
+lstCopy = (ArrayList)lst.clone();
+
+
+
+//
+        Object[] o = lst.toArray();
+        System.out.println(lst);
+        for (Object ob: o ) {
+
+            System.out.println(" "+ob);
+        }
+
+//        List<Student> listCopy = new ArrayList<Student>();
+//
+//        listCopy = (List) stdList.clone();
+
+
+
+     //   System.out.println(stdList);
+//        List<Student> result = new ArrayList<Student>();
+
+        Double high=0.0;
+        Student hightStudent=null;
+        for (Student s:stdList) {
+            for(Course c:s.getCourseList()){
+                if(c.getCourseName() =="MATH"){
+                    if(c.getObtainMarks() > high){
+                        high = c.getObtainMarks();
+                        hightStudent =s;
+
+                    }
+                }
+            }
+
+
+
+        }
+
+
+
+//        System.out.println("Highest Marks");
+//        System.out.println(hightStudent);
+
+        //
+//
+//
+//
+//        Iterator<Student> itr=stdList.iterator();
+//        while(itr.hasNext()){
+//            System.out.println(itr.next());
+//        }
+//    }
+    }
+
+    //which student have hight marks in math
+
+}
+
+

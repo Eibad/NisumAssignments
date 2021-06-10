@@ -1,0 +1,114 @@
+Q1.Explain JDK, JRE and JVM?
+byte -> .class
+compiler -> inerpreter
+JDK = environment to develop and execute program
+JRE = environment only run not develop
+jvm = responsible to run program line by line that why independent
+
+Q2.Explain public static void main(String args[]) in Java
+main method ,execution point
+
+Q3.Why Java is platform independent?
+
+Q4.Why Java is not 100% Object-oriented?
+
+	Q5.What is JIT compiler?
+Just-In-Time (JIT) compiler that improves the performance of Java applications
+by compiling platform-neutral Java bytecode into native machine code at run time
+
+Q6.What is classloader?
+JRE and these ClassLoaders load classes into memory dynamically.
+
+Q7.Is Empty .java file name a valid source file name?
+yes
+
+Q8.What are wrapper classes in Java?
+Wrapper class:(java self define by using premitive)
+String, integer
+advantage: wrapper class have its funtions for easiness
+
+Q9.What are constructors in Java?
+special type method have same name as class name for intiliazing/creating of object
+have not return type
+
+
+Q10.What is the difference between equals() and == in Java?
+== operators for reference comparison (address comparison)
+equals() method for content comparison.
+== checks if both objects point to the same memory location whereas
+ equals() evaluates to the comparison of values in the objects
+
+Q11.What's the purpose of Static methods and static variables?
+class level variable
+static variable
+share with every object of class
+
+util type method = helper method
+for creating connection
+
+
+Q12.What's the purpose of overriding toString method?
+return addresses
+
+Q13.Why Strings in Java are called as Immutable?
+string is inmutable,as it is pointing same refernce because if it chng it create new object 
+immutable can'nt change data
+
+Q14.What are the differences between Heap and Stack Memory in Java?
+stack : has referecne , pointing towards object
+heap : has object
+
+Q15.How many types of constructors are used in Java?
+default , parameterized
+
+Q16.What is the purpose of a default constructor?
+used to provide default values to the object like 0, null, etc., depending on the type.
+
+Q17.Does constructor return any value?
+current class instqance
+yes
+
+Q18.Is constructor inherited?
+no
+they are not data member of a class. Only variable and methods 
+
+
+Q19.Can you make a constructor final?
+no,
+A final method cannot be overridden by any subclasses. 
+
+Q20.Can we overload the constructors?
+METHOD/CONSTRUTOR OVERLOADING
+name(int id,int age)
+name(int id)
+
+
+Q21.What are the differences between the constructors and methods?
+A constructor is used to initialize the state of an object.
+behvior of object
+
+Q22.What are the restrictions that are applied to the Java static methods?
+only static, cant override
+
+Q23.Why is the main method static?
+main is static beacuse compiler run test class without creating it object
+
+Q24.Can we override the static methods?
+no,compile time p hota h	
+
+Q25.What is the static block?
+Static block is used for initializing the static variables. 
+can be used for static initializations of a class
+This block gets executed when the class is loaded in the memory.
+
+Q26.Can we execute a program without main() method?
+no
+
+Q27.What is the difference between static (class) method and instance method?
+static not reuqire object, method requred object
+
+Q28.Can we make constructors static?
+No, If we are trying to define a constructor with the static keyword a compile-time error will occur
+
+Q29.Can we make the abstract methods static in Java?
+no

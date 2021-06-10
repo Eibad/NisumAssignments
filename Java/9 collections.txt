@@ -1,0 +1,13 @@
+collection : play with data mainpulation sorting
+array list
+link list
+hasmap
+
+------------------
+array list random acess
+it maintain insertion order
+non synchorz means not thread safe it has not lock
+manipulation is slow
+-----------------
+maKE AARAyLIsT 
+

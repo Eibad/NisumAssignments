@@ -1,0 +1,18 @@
+CLASS
+if class has not construtr then it have by default empty constructor
+
+CONSTRUCTOR 
+special type method have same name as class name for intiliazing/creating of object
+have not return type
+
+METHOD/CONSTRUTOR OVERLOADING
+name(int id,int age)
+name(int id)
+
+OBJECT LEVEL VARIABLE
+asociate with object only
+
+CLASS LEVEL VARIABLE
+static variable
+share with every object of class
+

@@ -1,0 +1,6 @@
+mutable change data
+
+String --> inmutable,
+StringBuffer() --> mutable , thread safe,sysncho
+StringBuilder() --> good,locking technique ,not thread safe , non sysnchro
+why --> to minimize memory mangment

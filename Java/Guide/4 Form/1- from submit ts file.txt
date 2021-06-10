@@ -1,0 +1,9 @@
+//.ts file
+  submit(input){
+
+    console.log(input);
+  }
+
+  submitForm(form){
+    console.log(form);
+  }

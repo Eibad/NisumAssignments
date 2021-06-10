@@ -1,0 +1,9 @@
+singleton
+when you want to create object only 1 time.
+
+more than 1 object didnt create.
+
+when your http request server get 3 call, when you create object on every call
+then objects create in million which is unabe tou handle by server
+so server create object on himself call come server put value in object
+ 

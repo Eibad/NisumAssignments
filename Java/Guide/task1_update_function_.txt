@@ -1,0 +1,47 @@
+//------14-1-2020 -----------
+
+//increament salary of  employee using his id  
+//array of object
+//aray of obj empl name salary id =6
+//function 2param (id,new_salary)
+
+
+//---------task-----
+
+employee=[
+
+  {id:"01" , name:"Eibad" ,salary:1111},
+  {id:"02" , name:"Ali" ,salary:2222},
+  {id:"03" , name:"Amir" ,salary:3333},  
+  {id:"04" , name:"Rahim" ,salary:4444},  
+  {id:"05" , name:"Faisal" ,salary:5555},  
+  {id:"06" , name:"Ibrahim" ,salary:6666}, 
+  
+]
+
+//function
+
+ update(e_id,new_salary){
+
+  this.employee.filter(function(values,i){
+
+    if(values.id == e_id){
+
+      values.salary = values.salary+ new_salary
+    }
+  })
+  
+  return true;
+  }
+
+
+//consturctor main
+  constructor(){
+
+    console.log(this.employee);
+   this.update("01",2);
+   this.update("01",2);
+   console.log(this.employee);
+}
+
+

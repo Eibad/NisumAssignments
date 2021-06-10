@@ -1,0 +1,14 @@
+String is Array of charatcer
+in java it is object
+string are imutable ; can not be change / unchange able
+
+String s = "123"   ------------------- (by Literal)
+String s = new String("123") -----(by new keyword)
+
+===1 object====
+String s = "123"
+String s1 = "123"
+
+===3 object====
+String s = "123"
+String s1 = s+"45"

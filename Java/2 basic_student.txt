@@ -1,0 +1,139 @@
+public class student {
+
+    private Integer id;
+    private String name;
+    private String rollNumber;
+    private String fatherName;
+    private String address;
+    private String contactNo;
+    private String currentClass;
+
+    public student() {
+
+    }
+
+
+    public student(Integer id, String name, String rollNumber, String fatherName, String address, String contactNo, String currentClass) {
+        this.id = id;
+        this.name = name;
+        this.rollNumber = rollNumber;
+        this.fatherName = fatherName;
+        this.address = address;
+        this.contactNo = contactNo;
+        this.currentClass = currentClass;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getRollNumber() {
+        return rollNumber;
+    }
+
+    public void setRollNumber(String rollNumber) {
+        this.rollNumber = rollNumber;
+    }
+
+    public String getFatherName() {
+        return fatherName;
+    }
+
+    public void setFatherName(String fatherName) {
+        this.fatherName = fatherName;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getContactNo() {
+        return contactNo;
+    }
+
+    public void setContactNo(String contactNo) {
+        this.contactNo = contactNo;
+    }
+
+    public String getCurrentClass() {
+        return currentClass;
+    }
+
+    public void setCurrentClass(String currentClass) {
+        this.currentClass = currentClass;
+    }
+
+    @Override
+    public String toString() {
+        return "student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", rollNumber='" + rollNumber + '\'' +
+                ", fatherName='" + fatherName + '\'' +
+                ", address='" + address + '\'' +
+                ", contactNo='" + contactNo + '\'' +
+                ", currentClass='" + currentClass + '\'' +
+                '}';
+    }
+
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        student std1 = new student();
+        std1.setName("Eibad");
+        std1.setFatherName("father");
+        std1.setAddress("address");
+        std1.setContactNo("111");
+        std1.setCurrentClass("1");
+        std1.setId(1);
+        std1.setRollNumber("roll");
+
+        int s=1;
+        int d=1;
+
+        System.out.println(s==d);
+
+        student std2 = new student();
+        std2.setName("Eibad");
+        std2.setFatherName("father");
+        std2.setAddress("address");
+        std2.setContactNo("111");
+        std2.setCurrentClass("1");
+        std2.setId(1);
+        std2.setRollNumber("roll");
+
+        System.out.println(std1);
+        System.out.println(std2);
+
+        System.out.println(std1.toString() == std2.toString());
+
+
+        String a="aa";
+        String b="aa";
+        System.out.println(a);
+
+        System.out.println(std1.equals(std1));
+
+
+    }
+}

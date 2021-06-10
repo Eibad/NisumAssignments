@@ -1,0 +1,23 @@
+<!-- 
+<input type="text" #inputBox>
+<button type="submit(inputBox.value)">Click</button>  -->
+
+<p>form works!</p>
+
+
+<!-- //send data inform of object -->
+
+<!-- <div class="container" style="padding-top: 1%">
+
+    
+<form #myForm="ngForm" (ngSubmit)="submitForm(myForm.value)">
+        <input type="text" class="form-control" style="width: 40%" placeholder="Enter Value..." name = "name" ngModel>
+        <input type="text" class="form-control" style="width: 40%" placeholder="Enter Value..." name = "inputbox2" ngModel>
+        <input type="text" class="form-control" style="width: 40%" placeholder="Enter Value..." name = "inputbox3" ngModel>
+        <input type="text" class="form-control" style="width: 40%" placeholder="Enter Value..." name = "inputbix4" ngModel>
+        <button type="submit"  class="btn btn-success">Click</button> 
+    </form>
+
+  
+</div>
+ -->

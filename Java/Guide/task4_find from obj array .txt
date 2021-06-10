@@ -1,0 +1,22 @@
+  //-----------------------------------
+
+let student = [{name: "ali" , age : 22 , roll:"01"},
+              {name: "eibad" , age : 22 , roll:"02"},
+              {name: "amir" , age : 22 , roll:"03"},
+              {name: "ibrahim" , age : 22 , roll:"04"}];
+
+           //   console.log("----------student---------------")
+           //   console.log(student)
+
+          //    console.log("-------------------------")
+              let objj = student.find(function(v,i){
+                  if(v.roll == "02")
+                return true
+              })
+objj.name="e";
+
+              console.log("-------------------------")
+             // console.log(objj)
+              console.log("-------------------------")
+              console.log(student)
+

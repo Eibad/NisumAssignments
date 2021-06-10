@@ -1,0 +1,15 @@
+//------13-1-2020 -----------
+  
+//array of object
+arry_obj=[
+
+    {name:"Eibad" , age:13},
+    {name:"Ali" , age:12},
+    {name:"Ahmed" , age:22},
+  ]
+
+//array of object khali
+  arry2_obj =[{}]
+
+
+

@@ -1,0 +1,11 @@
+ //for using sorting in collection
+                //when using sort we tell how to sort we use compable inteface
+                //when you want to sort your class
+                //comparable stick to the class
+                //sorting on basis of age but for name we have tp define again in compareTo()
+
+
+
+                //comparator
+                //seprate comprator class for every basis
+                //we define ageComprator  nameCompratetor

@@ -1,0 +1,6 @@
+singleton method
+array
+java spring
+jvm
+garbage collection
+static method,fields

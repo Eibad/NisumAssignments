@@ -1,0 +1,14 @@
+
+  //lamda function , arrow function  
+let array = [2,3,4,5]
+
+
+  array.map(function(v,i){return v})
+
+  
+  array.map((v,i)=>{
+    return v
+  })
+  array.map(v=>v)
+  array.map((v,i)=> v)
+

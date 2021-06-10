@@ -1,0 +1,72 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Student {
+
+    private String name;
+    private Double age;
+    List<Course> courseList ;
+
+
+    public Student() {
+    }
+
+    public Student(String name, Double age, List<Course> courseList) {
+        this.name = name;
+        this.age = age;
+        this.courseList = courseList;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Double getAge() {
+        return age;
+    }
+
+    public void setAge(Double age) {
+        this.age = age;
+    }
+
+    public List<Course> getCourseList() {
+        return courseList;
+    }
+
+    public void setCourseList(List<Course> courseList) {
+        this.courseList = courseList;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", courseList=" + courseList +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Student student = (Student) o;
+
+        if (name != null ? !name.equals(student.name) : student.name != null) return false;
+        if (age != null ? !age.equals(student.age) : student.age != null) return false;
+        return courseList != null ? courseList.equals(student.courseList) : student.courseList == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = name != null ? name.hashCode() : 0;
+        result = 31 * result + (age != null ? age.hashCode() : 0);
+        result = 31 * result + (courseList != null ? courseList.hashCode() : 0);
+        return result;
+    }
+}

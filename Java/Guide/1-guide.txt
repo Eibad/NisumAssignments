@@ -1,0 +1,10 @@
+install node js
+run cmd for first command
+npn -v (fon check version)
+run cmd in desitnated folder and run 2nd command
+
+Map: it is use as for loop
+
+push 
+
+filter

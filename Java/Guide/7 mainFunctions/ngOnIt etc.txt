@@ -1,0 +1,8 @@
+construtor =run one time at first
+
+
+ngonit =run one time after constructor
+
+change =run when change occure during parent child
+
+mode=run when changes occcur on same class

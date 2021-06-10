@@ -1,0 +1,25 @@
+hasing technq - simplfie youtube ABDUL BARI
+
+Hashing jo value ho usi index p rkh do
+
+us order mnhi milti q kae store hi alg kr raha
+
+masla:bara number agai tou lengt br gai array ki or khali spaces
+
+haal : x% 10
+
+10 size of array
+
+if duplication/collision occured:open (chaing), close (linear,quadratic) [when array has max size]
+HAAL: chaining: every index has link list
+	Linear : put elemnt on next emepty index -->
+	Quadratic : square of i -->h(x) + f(i)
+
+khud bana na hae
+using collection 1 array list banao gae or link list
+implete 1 collision method
+
+
+INTERVIEW:
+set & array diifellllr
+what is hash

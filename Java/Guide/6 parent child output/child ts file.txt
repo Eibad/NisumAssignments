@@ -1,0 +1,34 @@
+//.ts file
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+
+@Component({
+  selector: 'app-child-output',
+  templateUrl: './child-output.component.html',
+  styleUrls: ['./child-output.component.css']
+})
+export class ChildOutputComponent implements OnInit {
+
+
+inputfromChild;
+  @Output() sender = new EventEmitter();
+
+  constructor() {
+
+   }
+
+  ngOnInit() {
+  }
+
+  sendToParent(){
+
+    this.sender.emit(this.inputfromChild);
+  }
+
+}
+
+
+//1card have 3 type
+//facebokk
+//form in put deatil url,name,image click
+//--------------//
+//customize date picker --dartefile

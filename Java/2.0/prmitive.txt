@@ -1,0 +1,12 @@
+int num = 300_000_000 == 300000000
+
+premitive type:
+int,char,float
+
+Wrapper class:(java self define by using premitive)
+String, integer
+
+advantage:
+wrapper class have its funtions for easiness
+
+Long i = 12L;

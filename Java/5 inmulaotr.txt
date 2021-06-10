@@ -1,0 +1,12 @@
+immutable can'nt change data
+string is inmutable,as it is pointing same refernce because if it chng it create new object 
+store in pool(located in heap)
+
+String s1 = "hh"
+String s2 = s1 + "ab"
+String s3 = "hh"
+
+3 objects == hh , ab , s1+ab
+cant create new instance of object if it value already present
+
+TASK : make immutable class and explain it

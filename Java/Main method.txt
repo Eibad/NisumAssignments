@@ -1,0 +1,3 @@
+vargs when you run from cmd use arg which you input
+class varibale == static variable
+main is static beacuse compiler run test class without creating it object

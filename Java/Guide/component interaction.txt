@@ -1,0 +1,4 @@
+//parent child realtion
+//parent array of object have data of card
+//ngfor html print object in card
+	

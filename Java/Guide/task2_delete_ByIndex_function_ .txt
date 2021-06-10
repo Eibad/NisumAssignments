@@ -1,0 +1,60 @@
+//------14-1-2020 -----------
+
+//delete object by name  
+//array of object
+//aray of obj empl name 
+//function 2param (name)
+
+
+//---------task-----
+
+
+employee=[
+
+  {id:"01" , name:"Eibad" ,salary:1111},
+  {id:"02" , name:"Ali" ,salary:2222},
+  {id:"03" , name:"Amir" ,salary:3333},  
+  {id:"04" , name:"Rahim" ,salary:4444},  
+  {id:"05" , name:"Faisal" ,salary:5555},  
+  {id:"06" , name:"Ibrahim" ,salary:6666}, 
+  
+]
+
+
+//function
+delete(name){
+
+  var new_index = this.employee.findIndex(function(v,i)
+{
+    if(v.name == name)
+    {
+      return true;
+    }
+
+})
+var newIndex
+  this.employee.map(function(value,index){
+      if(value.name == name){
+
+          // this.employee.splice(index,1)
+          newIndex= index;
+          return true;
+      }
+        
+  })
+  this.employee.splice(newIndex,1);
+  //this.employee.splice(new_index,1);
+  
+
+}  
+}
+
+
+//consturctor main
+  constructor(){
+
+      this.delete("Eibad")
+    console.log(this.employee);
+}
+
+

@@ -1,0 +1,21 @@
+  obj =   {name:"Eibad" , pswd:123};
+  arry = ['11','22'];
+  b:String = "var";
+
+
+              //--------------BASIC--------------
+
+   /* let obj_in_construtor = {name:"Eibad" , pswd:123};
+    let a:String = "variable";
+
+    console.log("hello")
+
+    console.log(this.arr_Obj);
+    console.log(a);
+    console.log(obj_in_construtor.name)
+    console.log(this.arr_Obj);
+    console.log(this.arr_Obj[0].name+"--");
+  
+*/
+    //-----------------BASIC -----------
+  

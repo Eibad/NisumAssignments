@@ -1,0 +1,26 @@
+STATIC
+class level variable
+static variable
+share with every object of class
+acess by class name
+student.count
+
+NOT GOOD APPROACH
+can also acess by refrence/object
+s1.count
+
+question: find out how many object i have created ?
+answer: make count variable static and count++ in construtor
+
+STATIC METHODs
+util type method = helper method
+for creating connection
+
+
+TASK:
+car class have atribute
+var s.no same for all class
+var engNo,milage,brand
+static Oilmethod if millage >5000 {"Change oil" + milage =0} else{"No Need"}
+brake check
+check fuel

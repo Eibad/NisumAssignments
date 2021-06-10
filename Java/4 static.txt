@@ -1,0 +1,17 @@
+
+static is a key use by Variable, blog, method, class
+-- static make mathod to class level not intance level
+call before contrutor at jvm run time
+help in save memory
+same for all objects
+in static mehtod can not use instance varibale
+we use it by class name
+
+eg: dbConnection,squareRoot
+
+Pattern of running....
+staticVariable-StaticBlock-method-instanceVariabel-instanceblock,instanceConstrutor
+
+
+
+

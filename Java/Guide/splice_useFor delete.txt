@@ -1,0 +1,13 @@
+//----------------splice as delete-------
+
+let arryString = ["a","v","bb","k"];
+
+//delete index 2 end after 1 itteration
+//arryString.splice(2,1)
+
+//delete from index 2 end after 1 itteration place "change" on index 2 
+arryString.splice(2,1,"change","woe");
+console.log(arryString);
+
+*/
+//----------------splice as delete   -----END-------

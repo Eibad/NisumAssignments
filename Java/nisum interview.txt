@@ -1,0 +1,12 @@
+//opp 4 pillar
+        //mountain climb
+//binary tree intiliaz in single varibale using dta structure  ; inorder triverse  --tree set ,slef blance tree
+//linked list 0 --100  .get size
+//array list vs link
+//normalization
+//emp to depart many to many
+//foreign primary key?
+//disc write data
+//if condtion insert 2 output 4 vise versa minus by 6
+//jug litre scne 5,3 - 4--> 
+//cake 2 attempt into 8

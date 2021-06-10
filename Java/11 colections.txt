@@ -1,0 +1,31 @@
+data structure = how we make data set
+collection = for manipulation in data
+
+*array list
+-searching is fast due to index base
+-manipulation is slow due to shifting
+
+*linked list
+-manipulation fast becaue you have to just chng refrence
+-searching slow due to check of every element
+
+*hash set
+-dupliacation not allow
+-insertion order don't maintain
+-serching is fast in single click
+-has not confirm order
+
+*link hash set 
+-same as hash set
+-can maintain insertion order
+-use link list
+
+*tree set
+-output have ascending order ,auto sorted
+
+
+three class student-list of course, course-list of instructor instrutor
+instructor can multiple course
+
+instructor who teach math course
+then its student 

@@ -1,0 +1,35 @@
+collection : play with data mainpulation sorting
+array list
+link list
+hasmap
+
+------------------
+array list random acess
+it maintain insertion order
+non synchorz means not thread safe it has not lock
+manipulation is slow
+-----------------
+maKE AARAyLIsT 
+
+----------
+iterator can go to back when we want
+
+streams is also loop which help in condtions
+streamParallel loop with multiple condtion in single loop = even,odd,prime
+
+
+---
+for each
+iterate on elements
+
+--------
+array list sort
+use collection api
+collection.sort(arrayList)
+
+-----
+Listitterator
+
+----vector vs arrayLisy
+vector is synchron
+arraylist is not
